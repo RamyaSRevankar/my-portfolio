@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
              * Replace the URL string below with your live endpoint when ready:
              * e.g., "https://formspree.io/f/your_endpoint_id" or "https://submit-form.com/your_id"
              */
-            const ENDPOINT_URL = "https://formspree.io/f/placeholder"; 
+            const ENDPOINT_URL = "https://formsubmit.co/ramyasrevankar2002@gmail.com"; 
 
             // Simulating real network delay if placeholder URL isn't configured yet
             if (ENDPOINT_URL.includes("placeholder")) {
