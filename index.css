@@ -314,22 +314,7 @@ header {
     border-color: rgba(255, 255, 255, 0.4);
 }
 
-/* Smooth Social Communication Link Anchors */
-.recruiter-socials {
-    display: flex;
-    gap: 20px;
-}
 
-.recruiter-socials a {
-    color: #64748b;
-    font-size: 1.3rem;
-    transition: color 0.2s ease, transform 0.2s ease;
-}
-
-.recruiter-socials a:hover {
-    color: #6366f1;
-    transform: translateY(-2px);
-}
 
 /* Fully Responsive Breakpoints */
 @media (max-width: 968px) {
@@ -354,5 +339,87 @@ header {
     }
     .recruiter-name {
         font-size: 2.8rem;
+    }
+}
+.footer {
+    width:100%;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    margin-top: 80px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-brand h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.footer-brand p {
+    color: #bdbdbd;
+}
+
+.footer-links{
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #4da3ff;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: #4da3ff;
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    color:#bdbdbd;
+    border-top: 1px solid rgba(255,255,255,0.21);
+    padding: 15px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-social {
+        justify-content: center;
     }
 }
