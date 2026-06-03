@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+:root {
+    --bg-deep:#070913;
+    --card-surface:#11131e;
+    --primary-glow:#a855f7;
+    --secondary-glow:#ec4899;
+    --cyan-accent:#06b6d4;
+    --gold-accent:#fbbf24;
+    --text-primary:#ffffff;
+    --text-secondary:#94a3b8;
+}
+
+body{
+    background-color: var(--bg-deep);
+    color: var(--text-primary);
+    min-height: 100vh;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-wrapper{
+    max-width: 1140px;
+    width: 100%;
+    text-align: center;
+}
+
+.filter-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 45px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: #94a3b8;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter-btn:hover {
+    color: #ffffff;
+    border-color: rgba(168, 85, 247, 0.4);
+    background-color: rgba(168, 85, 247, 0.05);
+}
+
+.filter-btn.active {
+    background: linear-gradient(135deg, #a855f7, #06b6d4);
+    color: #ffffff;
+    border-color: transparent;
+    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.25);
+}
+
+.section-subtitle{
+    font-size: 0.85rem;
+    color: var(--primary-glow);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ffffff 40%, #e2e8f0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.cyber-pulse-hr{
+    border: none;
+    height: 3px;
+    width: 50%;
+    margin: 0 auto 60px auto;
+    background: linear-gradient(90deg, rgba(168,85,247,0.1) 0%, var(--primary-glow) 50%, rgba(168,85,247,0.1) 100%);
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.3);
+    overflow: hidden;
+}
+
+.cyber-pulse-hr::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100px;
+    height: 100%;
+    width: 80px;
+    background: linear-gradient(90deg, transparent,#ffffff, var(--cyan-accent),transparent );
+    animation: laserPulse 3s linear infinite;
+}
+
+@keyframes laserPulse {
+    0%{left: -100px;}
+    100%{left: 100%;}
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 35px;
+    margin-top: 20px;
+}
+
+.project-card{
+    background: linear-gradient(145deg, #0f111a, #151826);
+    border: 1px solid rgba(255,255,255,0.03);
+    border-radius: 24px;
+    overflow: hidden;
+    text-align: left;
+    transition: all 0.4s cubic-bezier(0.165,0.84,0.44,1);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.project-card:hover{
+    transform: translateY(-10px);
+    border-color: rgba(168, 85, 247, 0.25);
+    box-shadow: 0 30px 60px rgba(168,85,247,0.12);
+}
+
+.card-visual{
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bg-healthcare{
+    background: linear-gradient(135deg, #072e33 0%, #0c0f1d 100%);
+}
+
+.bg-jewellery{
+    background: linear-gradient(135deg, #2d1b10 0%, #0c0f1d 100%);
+}
+
+.card-visual svg{
+    width: 70px;
+    height: 70px;
+    opacity: 0.8;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.project-card:hover .card-visual svg{
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+.project-card:hover .bg-healthcare~ .card-body::before{
+    background: radial-gradient(circle at bottom right, rgba(6,182,212,0.15),transparent 70%);
+}
+
+.project-card:hover .bg-jewellery ~ .card-body::before{
+    background: radial-gradient(circle at bottom right, rgba(251,191,24,0.12),transparent 70%);
+}
+
+
+.card-body{
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card-body::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+    border-radius: 0 0 24px 24px;
+}
+
+.project-meta{
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.meta-healthcare{
+    color: var(--cyan-accent);
+}
+.meta-jewellery{
+    color: var(--gold-accent);
+}
+
+.project-name{
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 14px;
+    line-height: 1.4;
+}
+
+.project-description{
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.tach-badge-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-tag{
+    background: rgba(255,255,255,0.04);
+    color: rgba(255,255,255,0.7);
+    border: 1px solid rgba(255,255,255,0.06);
+    padding: 5px 14px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.08);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .tech-tag{
+    background-color: rgba(255, 255, 255, 0.07);
+    color: var(--text-primary);
+}
+
+
+@media (max-width:768px) {
+    .section-title{
+        font-size: 2.2rem;
+    }
+    .projects-grid{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+</head>
+<body>
+    <section class="portfolio-wrapper">
+        <p class="section-subtitle">My Portfolio</p>
+        <h2 class="section-title">Featured Projects</h2>
+        <hr class="cyber-pulse-hr">
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="python">Python</button>
+            <button class="filter-btn" data-filter="web">Web Dev</button>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="card-visual bg-healthcare">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="var(--cyan-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                </div>
+                <div class="card-body">
+                    <div class="project-meta meta-healthcare">Machine Learning and Anlyics</div>
+                    <h3 class="project-name">Personalized Healthcare and Medicine Recommendation System</h3>
+                    <p class="project-description">An intelligent system leveraging diagnostic models to evaluate patient symptoms, forecast risks, and dynamically tailor medication regimens using advanced ML processing pipelines.</p>
+                    <div class="tech-badge-container">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask API</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS and JS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="card-visual bg-jewellery">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 3h12l4 6-10 12L2  9z"></path>
+                        <path d="M11 3 8 9l4 12 4-12-3-6"></path>
+                        <path d="M2 9h20"></path>
+                    </svg>
+                </div>
+                <div class="card-body">
+                    <div class="project-meta meta-jewellery">E-commerce application</div>
+                    <h3 class="project-name">Jewellery shop</h3>
+                    <p class="project-description">A modern, luxury web applicatio configured with secure, reactive interactive displays, product sorting logic, inventory architecture controls, and immersive catalog interfaces.</p>
+                    <div class="tech-badge-container">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Sqlite3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+    <script src="projects.js"></script>
+</body>
+</html>

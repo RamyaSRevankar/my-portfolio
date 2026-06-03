@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="contact-section">
+        <p class="section-tag">Get in Touch</p>
+        <h2 class="section-title">Contact Me</h2>
+        <hr class="attractive-hr">
+        <div class="contact-grid">
+            <div class="info-panel">
+                <h3>Let's Connect</h3>
+                <p class="desc">Fell free to reach out for collaborations, opportunities, or just a friendly chat about technology and software development.</p>
+                <div class="info-cards-stack">
+                    <div class="info-box">
+                        <div class="icon-wrapper">
+                            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <label>Email</label>
+                            <span>ramyarevankar2002@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="icon-wrapper">
+                            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <label>Location</label>
+                            <span>Davanagere, karnataka, India</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="socials-title">Follow me on</p>
+                <div class="social-row">
+                    <a href="https://www.linkedin.com/in/ramya-s-revankar" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/ramyasrevankar" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <form class="contact-form" onsubmit="event.preventDefault();">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="your@email.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="what's this about?">
+                </div>
+                <div class="form-group no-margin">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Your message....."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </section>
+    <script src="contact.js"></script>
+</body>
+</html>

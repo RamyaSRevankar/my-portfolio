@@ -1,0 +1,358 @@
+/* Premium Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background-color: #090514; /* Deep elite dark purple layout */
+    color: #f8fafc;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* Ambient Professional Glow Overlays */
+body::before {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(0,0,0,0) 70%);
+    top: -10%;
+    right: -10%;
+    z-index: -1;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.12) 0%, rgba(0,0,0,0) 70%);
+    bottom: 5%;
+    left: -5%;
+    z-index: -1;
+}
+
+/* Elegant Premium Navigation Bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 10%;
+    background-color: rgba(9, 5, 20, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.logo-bracket {
+    color: #6366f1;
+}
+
+.logo-accent {
+    color: #a855f7;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.25s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.btn-resume {
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.25);
+    transition: all 0.3s ease;
+}
+
+.btn-resume:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(168, 85, 247, 0.4);
+}
+
+/* Structured Hero Layout */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 120px 10% 60px 10%;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Strategic Profile Component */
+.profile-column {
+    display: flex;
+    justify-content: center;
+}
+
+.avatar-glow-ring {
+    position: relative;
+    width: 290px;
+    height: 290px;
+    border-radius: 50%; /* Modern squircle shape */
+    padding: 4px;
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.profile-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #130d24;
+}
+
+/* Live Recruitment Status Indicator */
+.availability-badge {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #10b981; /* Vibrant Success Green */
+    color: #ffffff;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+    white-space: nowrap;
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.9); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.5; }
+    100% { transform: scale(0.9); opacity: 1; }
+}
+
+/* HR Context Content Styling */
+.badge-recruiter {
+    display: inline-block;
+    background-color: rgba(99, 102, 241, 0.12);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    color: #818cf8;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.intro-hello {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.recruiter-name {
+    font-size: 3.6rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    background: linear-gradient(to right, #ffffff, #cbd5e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 4px;
+}
+
+.recruiter-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #a855f7; /* Highlighting primary technical field */
+    margin-bottom: 12px;
+}
+
+.dynamic-typing {
+    font-size: 1.05rem;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dynamic-typing i {
+    color: #6366f1;
+}
+
+.cursor {
+    background-color: #6366f1;
+    width: 2px;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+.recruiter-pitch {
+    color: #94a3b8;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    max-width: 540px;
+}
+
+.hiring-meta {
+    color: #cbd5e1;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+.hiring-meta i {
+    color: #6366f1;
+}
+
+/* Instant-Scan Technical Stack Badges */
+.tech-pill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 35px;
+}
+
+.tech-pill {
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #e2e8f0;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Call To Actions UI Layout */
+.action-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.btn {
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.25s ease;
+}
+
+.btn-hire {
+    background-color: #ffffff;
+    color: #090514;
+}
+
+.btn-hire:hover {
+    background-color: #f1f5f9;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+}
+
+.btn-work {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.btn-work:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Smooth Social Communication Link Anchors */
+.recruiter-socials {
+    display: flex;
+    gap: 20px;
+}
+
+.recruiter-socials a {
+    color: #64748b;
+    font-size: 1.3rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.recruiter-socials a:hover {
+    color: #6366f1;
+    transform: translateY(-2px);
+}
+
+/* Fully Responsive Breakpoints */
+@media (max-width: 968px) {
+    header {
+        padding: 15px 5%;
+    }
+    .nav-links {
+        display: none; /* Streamline mobile experience */
+    }
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 45px;
+    }
+    .profile-column {
+        order: -1;
+    }
+    .badge-recruiter, .tech-pill-container, .action-row, .recruiter-socials {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .recruiter-name {
+        font-size: 2.8rem;
+    }
+}
